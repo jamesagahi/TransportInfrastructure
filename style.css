@@ -1,0 +1,96 @@
+* {
+    border: 0;
+    outline: none;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #32CD32;
+}
+
+.rect {
+    height: 60px;
+    width: 300px;
+    background: white;
+    color: #eb34df;
+    position: relative;
+    left: -50px;
+    top: 50px;
+    border-radius: 10px;
+
+}
+
+
+.slider-cont {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px 50px 50px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 20px;
+}
+
+.slider input {
+    position: relative;
+    left: -6px;
+    top: 0;
+    width: 212px;
+    height: 40px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 99;
+
+}
+
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 3px solid #32CD32;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.slider progress {
+    width: 200px;
+    height: 40px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+
+}
+
+.slider progress::-webkit-progress-value {
+    background-color: #32CD32;
+
+}
+
+.sliderValue {
+    font-family: 'Open Sans',sans-serif;
+    font:700;
+    width: 28px;
+    height: 20px;
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+    left: 110px;
+    top: -10px;
+}
+
